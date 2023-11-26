@@ -1,0 +1,17 @@
+{% extends "headandfoot.html" %}
+
+{% block content %}
+
+{% for article in news_articles %}
+    <a href="/{{ article.news_slug }}" class="news-box">
+        <h2>{{ article.news_title }}</h2>
+        <img src="/media/{{article.news_img}}" alt="{{ article.news_title }} Image" style="max-width: 100%;">
+        <p>{{ article.news_desc|safe|slice:":500" }}</p>
+    </a>
+
+    {% if forloop.counter|divisibleby:2 %}
+        <div class="clearfix"></div>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

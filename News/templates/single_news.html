@@ -1,0 +1,9 @@
+{% extends "headandfoot.html" %}
+
+{% block content %}
+
+<h2>{{ single_news.news_title }}</h2>
+<img src="/media/{{single_news.news_img}}" alt="{{ single_news.news_title }} Image" class="img-fluid">
+<p>{{ single_news.news_desc | safe }}</p>
+
+{% endblock content %}
