@@ -6,7 +6,7 @@ Displays daily news and allows user to create, update and delete the news from t
 
 Uses Django models to accomplish the task
 
-### Screenshot
+## Screenshot
 ### Home Page
 
 <img width="929" alt="image" src="https://github.com/DSam327/Daily-News-Display/assets/113661235/8ee373bb-74f1-43c3-b247-e114b2f4eb41">
